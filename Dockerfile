@@ -1,7 +1,7 @@
 #
 # Dockerfile
 #
-FROM alpine AS builder 
+FROM alpine:3.12.0 AS builder 
 RUN apk add build-base 
 WORKDIR /home
 COPY hello.c .
